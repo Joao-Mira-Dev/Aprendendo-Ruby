@@ -1,0 +1,21 @@
+Aqui teremos quatro arquivos separados, onde dois deles serão de módulo, um será de classe e que realizara algumas funções,
+MIXINS vem de mistura, para ilustrar isso iremos misturar uma classe que tem seu prórpio métodoa dois módulos os quais contém,
+os seus próprios métodos, epor ultimos iremos usar um outro arquivo para mostrarmos o funcionamento de todo o conjunto.
+
+Quando criamos o moduloA.rb e o moduloB.rb temos aqui dois aquivos em que seu interior possuem seus próprios módulos,
+no caso do moduloA.rb temos o módulo A e no caso do moduloB.rb temos o módulo B, já no classeExemplo.rb nós iremos
+requisitar atraves do require_relative a importação dos arquivos moduloA.rb e moduloB.rb, já tendo acesso aos mesmos
+iremos criar uma classe chamada Exemplo onde na mesma iremos incluir atraves do include o módulo A presente no arquivo
+moduloA.rb e o módulo B presente no arquivo moduloB.rb e dentro da mesma classe criaremos o método metodoExemplo, após
+isso criaremos o arquivo app.rb onde nele iremos através novamente do uso do require_relative importar o arquivo
+classeExemplo, vale resaltar que quando importamos um arquivo onde no qual o mesmo possui uma classe para acessa-la não
+é nescessário realizarmos o include da mesma basta apenas instânciala, ainda em app.rb iremos criar um objeto da classe
+classeExemplo e em seguida pediremos para que o mesmo execute os métodos metodoA, metodoB e o metodoExemplo.
+
+Se lermos damaneira com que o interpretador entende em linhas diretas seria a classe classeExemplo tem como métodos os
+métodos metodoA, metodoB e o metodoExemplo, mesmo se o metodoA for do módulo A e o metodoB for do módulo B pois dentro
+do arquivo classeExemplo.rb nós importamos através do require_relativeos arquivos moduloA e moduloB e dentro da classe
+classeExemplo nós incluimos o módulo A o qual mesmo está presente no aquivo moduloA e o modulo B o qual o mesmo está
+presente no arquivo moduloB.
+
+Mixins nos permitem realizarmos uma pseudo herança múltipla.

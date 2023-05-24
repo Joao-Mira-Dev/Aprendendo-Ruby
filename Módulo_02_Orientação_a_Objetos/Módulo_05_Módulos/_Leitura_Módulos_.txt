@@ -1,0 +1,5 @@
+Aqui teremos dois arquivos separados onde em um criaremos o módulo e o outro o "APP"
+e através do arquivo app acessaremos o módulo e utilizaremos seus dados, classe e métodos.
+
+Módulos agem como namescpaces nos quais podemos criar classes de mesmo nome sem ocorrer
+conflitos, e podemos compartilhar classes entre módulos.
